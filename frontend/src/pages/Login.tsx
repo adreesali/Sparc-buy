@@ -12,7 +12,6 @@ const Login: React.FC = () => {
 
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
       const { name, value } = e.target
-
       setData((preve) => {
         return{
           ...preve,
@@ -20,14 +19,11 @@ const Login: React.FC = () => {
         }
       })
     }
-
+    
     const handleSubmit =(e: { preventDefault: () => void; }) => {
       e.preventDefault()
-    }
-
-
+    } 
     console.log("data login", data)
-
     return (
         <section id='login'>
             <div className="bg-white w-full max-w-sm mx-auto">
